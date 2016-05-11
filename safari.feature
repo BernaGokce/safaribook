@@ -5,6 +5,7 @@ Feature: Safari book reading time
   I learn how many times the book will take to watch
   So that I can arrange my time
 
+  @scenario_1
   Scenario: Learning time
 
     Given I am at Safari book page

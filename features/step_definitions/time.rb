@@ -20,11 +20,11 @@ end
 
 When(/^I can see and calculate total time of book$/) do
   sleep 3
+  sum = Time.parse("00:00:00").to_i
   #all('div.chapter-running-time').each { |time| puts time.text }
-  sum = 0
   #total = all('div.chapter-running-time').each { |time| puts  sum+=time.text.to_f}
-  total = all('div.chapter-running-time').each { |time| puts  sum+=time.text}
-  total.last
+  all('div.chapter-running-time').each { |video_time| puts  sum+=Time.parse(video_time.text).to_i}
+  puts sum.strftime("%H:%M:%S")
 end
 
 

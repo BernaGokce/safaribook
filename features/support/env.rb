@@ -2,9 +2,7 @@ require 'capybara/cucumber'
 require 'rspec'
 require 'selenium-webdriver'
 require 'nokogiri'
-
-
-
+require 'time'
 
 Capybara.default_driver = :selenium
 Capybara.javascript_driver = :selenium
